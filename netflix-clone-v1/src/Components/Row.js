@@ -26,9 +26,9 @@ function Row({ title, fetchUrl, isLargeRow }) {
       return response;
     };
     fetchData();
-    console.log(movies);
+    // console.log(movies);
   }, [fetchUrl]);
-  console.log(movies);
+  // console.log(movies);
   return (
     <>
       <div className="row" key={(title.length * 100) / 158}>
