@@ -13,7 +13,7 @@ function Banner() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const receivedResponse = await axios.get(requests.fetchTrendingMovie);
+      const receivedResponse = await axios.get(requests.fetchNetflixOrignals);
       setMovie(
         receivedResponse.data.results[
           Math.floor(Math.random() * receivedResponse.data.results.length)
@@ -57,6 +57,7 @@ function Banner() {
         {/* desc */}
         <h1 className="banner_desc">{truncateString(movie?.overview, 150)}</h1>
       </div>
+      <div className="banner_fadebottom"></div>
     </header>
   );
 }
