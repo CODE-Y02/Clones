@@ -1,0 +1,37 @@
+.row {
+  margin-left: 20px;
+}
+
+.row_posters {
+  display: flex;
+  /* geeting rid of horizontal page scrool */
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  background-color: aquamarine;
+}
+/* getting rid of scroolbar but not functionality */
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+.row__poster {
+  object-fit: contain;
+  /* obj fit - contain keeps aspect ratio  */
+
+  width: 100%;
+  max-height: 200px;
+  margin-right: 1.5rem;
+
+  transition: transform 450ms;
+  /* this transition apply 450ms delay on transform effect below */
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+.raw__poster_Large {
+  max-height: 400px;
+}
+.raw__poster_Large:hover {
+  transform: scale(1.09);
+}
