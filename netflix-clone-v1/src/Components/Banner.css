@@ -45,23 +45,13 @@
 }
 .banner_fadebottom {
   height: 7.8rem;
-  background: rgb(17, 17, 17);
-  background: -moz-linear-gradient(
+  /* background: rgb(17, 17, 17); */
+  background-image: linear-gradient(
     180deg,
-    rgba(17, 17, 17, 0.0032387955182072714) 0%,
-    rgba(17, 17, 17, 0.9948354341736695) 50%
+    transparent,
+    rgba(17, 17, 17, 0.9948354341736695),
+    #111
   );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(17, 17, 17, 0.0032387955182072714) 0%,
-    rgba(17, 17, 17, 0.9948354341736695) 50%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(17, 17, 17, 0.0032387955182072714) 0%,
-    rgba(17, 17, 17, 0.9948354341736695) 50%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111",endColorstr="#111111",GradientType=1);
 }
 @media screen and (max-width: 480px) {
   .banner_desc {
