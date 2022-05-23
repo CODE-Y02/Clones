@@ -35,30 +35,34 @@ function Banner() {
   }
 
   return (
-    <header
-      //   this header contain background image random from api
-      style={{
-        backgroundSize: "cover",
-        // cover takes full size of container
-        backgroundImage: `url(${Img_base_url}${movie?.backdrop_path})`,
-        // movie ? => ? handle when movie is not defind
-        backgroundPosition: "center center",
-      }}
-      className="banner"
-    >
-      <div className="banner_contents">
-        {/* title */}
-        <h1 className="banner_title">
-          {movie.title || movie.original_name || movie.original_title}
-        </h1>
-        {/* 2 btn */}
-        <button className="banner_btn">Play</button>
-        <button className="banner_btn">My List</button>
-        {/* desc */}
-        <h1 className="banner_desc">{truncateString(movie?.overview, 150)}</h1>
-      </div>
-      <div className="banner_fadebottom"></div>
-    </header>
+    movie && (
+      <header
+        //   this header contain background image random from api
+        style={{
+          backgroundSize: "cover",
+          // cover takes full size of container
+          backgroundImage: `url(${Img_base_url}${movie?.backdrop_path})`,
+          // movie ? => ? handle when movie is not defind
+          backgroundPosition: "center center",
+        }}
+        className="banner"
+      >
+        <div className="banner_contents">
+          {/* title */}
+          <h1 className="banner_title">
+            {movie.title || movie.original_name || movie.original_title}
+          </h1>
+          {/* 2 btn */}
+          <button className="banner_btn">Play</button>
+          <button className="banner_btn">My List</button>
+          {/* desc */}
+          <h1 className="banner_desc">
+            {truncateString(movie?.overview, 150)}
+          </h1>
+        </div>
+        <div className="banner_fadebottom"></div>
+      </header>
+    )
   );
 }
 
