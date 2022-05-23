@@ -1,3 +1,36 @@
+## INFO ABOUT PROJECT v1 dt 23/5/22
+
+Netflix clone is inspired by netflix and clever programmer's build of this project .
+Main pupose of this project is to learn how to call complex Api using axios instance and Improving Performance with lazy loding or you can say code splitting ("https://reactjs.org/docs/code-splitting.html") .
+
+Also this project contains additional file [privateApi.js] in src folder but as its private I am not gonna show you :).
+
+here are [Step_to_create_privateApi.js]
+create file as privateApi.js in src folder . Inside file do following : copy whatever inside and replace apiKey with your Tmdb api Key [const APIKEY = "your_Api_key";
+export default APIKEY;] .
+
+Get Api Key here (https://developers.themoviedb.org/3) .
+
+# Bugs in build ->
+
+banner crop and zoom (not keeping aspect ratio) , if next build is made can be easily fixed .
+Gives following error in console (https://image.tmdb.org/t/p/originalundefined), For now just ignore because app is working fine
+
+# IMP NOTE
+
+this project v1 does not have much functionality.
+
+credits :  
+Yatharth Lakhate (https://github.com/CODE-Y02 ) .
+
+Rafeh Qazi
+(https://github.com/CleverProgrammer) .
+
+Sonny Sangha
+(https://github.com/sonnysangha).
+
+###### NOW LET'S GET STARTED
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
