@@ -35,7 +35,7 @@ function Banner() {
   }
 
   return (
-    movie && (
+    movie.backdrop_path && (
       <header
         //   this header contain background image random from api
         style={{
