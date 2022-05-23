@@ -24,7 +24,7 @@ function Banner() {
     fetchData();
   }, []);
 
-  console.log(movie);
+  // console.log(movie);
 
   function truncateString(str, num) {
     if (str?.length > num) {
