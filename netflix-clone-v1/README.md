@@ -14,7 +14,8 @@ Get Api Key here (https://developers.themoviedb.org/3) .
 # Bugs in build ->
 
 banner crop and zoom (not keeping aspect ratio) , if next build is made can be easily fixed .
-Gives following error in console (https://image.tmdb.org/t/p/originalundefined), For now just ignore because app is working fine
+
+Gives following error in console (https://image.tmdb.org/t/p/originalundefined), [ALEREAY_FIXED](23-5-2022)
 
 # IMP NOTE
 
