@@ -16,7 +16,7 @@ function Search() {
   };
   console.log(input);
   return (
-    <div className="search">
+    <form className="search">
       <div className="search_inp">
         <SearchIcon className="search_inpIcon" />
         <input value={input} onChange={(e) => setInput(e.target.value)} />
@@ -24,12 +24,17 @@ function Search() {
       </div>
 
       <div className="search__btns">
-        <Button variant="outlined" onClick={search}>
+        <Button
+          variant="outlined"
+          // this type  submit ---> made submit action when we click enter >> ONLY work on form
+          type="submit"
+          onClick={search}
+        >
           Google Search
         </Button>
         <Button variant="outlined">I'm Feeling Lucky</Button>
       </div>
-    </div>
+    </form>
   );
 }
 
