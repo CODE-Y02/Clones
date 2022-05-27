@@ -35,7 +35,9 @@ const Home = () => {
           />
           <div className="search__container">
             {/* <Search/> ---> reusable component */}
-            <Search />
+            <Search
+            //  hideButtons --> means true by def
+            />
           </div>
         </div>
       </div>
