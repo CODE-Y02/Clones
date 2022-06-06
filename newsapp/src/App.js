@@ -38,16 +38,16 @@ function App() {
 
   useEffect(() => {
     newsApi();
-    console.log(category);
+    // console.log(category);
     // fetchData();
   }, [category, newsResults]);
 
-  console.log(newsArray);
-  console.log(newsResults);
+  // console.log(newsArray);
+  // console.log(newsResults);
   return (
     <div className="App">
       <NavInshorts setCategory={setCategory} />
-      <NewsContent />
+      <NewsContent newsArray={newsArray} newsResults={newsResults} />
       <Footer />
     </div>
   );
