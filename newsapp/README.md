@@ -1,3 +1,22 @@
+# About NewsApp - Inshorts clone
+
+--> This is clone of inshorts not real app developed only for educational purpose. I will try to make it closer to original .
+I have used newsApi in it but as developer plain has limit and it wonk correctly work on chrome after deployment so please try it on firefox .
+
+# Version history
+
+--> v1 06.06.22 {
+--> Fetch using axios and Ajax
+--> State Management using usestate
+--> IMP HOW TO GET DATE AND TIME IN READABLE FORMAT ??? --> solved in this app..
+--> Propdrilling example
+}
+# bugs 
+--> v1 --> container content is overflowing , only when img is failed to render 
+
+--> topbar pos is not fixed/stiky .
+--> bugs with api 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
