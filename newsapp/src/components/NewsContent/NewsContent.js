@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import appstore from "../../assets/appstore.png";
 import playstore from "../../assets/playstore.png";
 import NewsCard from "../NewsCard/NewsCard";
-function NewsContent({ newsResults, newsArray }) {
+function NewsContent({ loadmore, setLoadmore, newsResults, newsArray }) {
   return (
     <Container
       maxWidth="md"
@@ -34,7 +34,16 @@ function NewsContent({ newsResults, newsArray }) {
             <CircularProgress />
           </Box>
         )}
-        <button className="loadMore">Load More</button>
+        {loadmore <= newsResults && (
+          <>
+            <button
+              className="loadMore"
+              onClick={() => setLoadmore(loadmore + 20)}
+            >
+              Load More
+            </button>
+          </>
+        )}
       </div>
     </Container>
   );
