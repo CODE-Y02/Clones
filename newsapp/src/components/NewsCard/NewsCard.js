@@ -4,14 +4,14 @@ import "./NewsCard.css";
 
 
 function NewsCard({ newsItem }) {
-  console.log(newsItem);
+  // console.log(newsItem);
 
   const fullDate = new Date(newsItem.publishedAt);
 
   let date = fullDate.toString().split(" ");
   const hour = parseInt(date[4].substring(0, 2));
   const time = hour > 12 ? true : false;
-  console.log(date);
+  // console.log(date);
   return (
     
      
