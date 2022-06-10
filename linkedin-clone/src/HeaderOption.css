@@ -1,0 +1,30 @@
+.headerOption {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+  color: grey;
+}
+.headerOption:hover {
+  color: black;
+}
+.headerOption_title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.headerOption_icon {
+  object-fit: contain;
+  height: 0.8rem !important;
+  width: 0.8rem !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+.headerOption_avatar_wrap {
+  margin-left: 1.5rem;
+}
+.headerOption__avatar {
+  height: 1.8rem !important;
+  width: 1.8rem !important;
+}
