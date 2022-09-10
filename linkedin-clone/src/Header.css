@@ -1,15 +1,13 @@
 .header {
   position: sticky;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  /* border-bottom: 0.1px solid lightgray; */
-  background-color: white;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  width: 100%;
-  position: sticky;
+  top: 0;
   z-index: 999;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 0.1px solid lightgrey;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #fff;
 
   /* background-color: pink; */
 }
@@ -47,6 +45,6 @@
   /* flex: 0.6; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* background-color: rgb(19, 224, 255); */
 }

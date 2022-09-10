@@ -8,6 +8,7 @@
   text-align: center;
   min-width: 200px;
   margin-top: 10px;
+  margin-left: 10px;
   /* flex-wrap: nowrap; */
 }
 .sidebar_avatar {

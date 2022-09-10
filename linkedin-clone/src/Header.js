@@ -9,7 +9,21 @@ import WorkIcon from "@mui/icons-material/Work";
 import { Message } from "@mui/icons-material";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 // import { Avatar } from "@mui/material";
+
+import { useDispatch } from "react-redux";
+
+import { auth } from "./firebaseSetup.js";
+import { logout } from "./features/userSlice";
+
 function Header() {
+ 
+  const dispatch = useDispatch();
+
+  const logOutOfApp = () => {
+    dispatch(logout());
+    auth.signOut();
+  };
+
   return (
     <div className="header">
       <div className="h-left">
@@ -27,7 +41,7 @@ function Header() {
         <HeaderOption Icon={WorkIcon} title="Jobs" />
         <HeaderOption Icon={Message} title="Message" />
         <HeaderOption Icon={NotificationsIcon} title="Notification" />
-        <HeaderOption avatar title="Me" />
+        <HeaderOption avatar onClick={logOutOfApp} title="Me" />
       </div>
     </div>
   );
